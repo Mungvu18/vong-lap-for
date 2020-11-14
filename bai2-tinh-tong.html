@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Total</title>
+</head>
+<body>
+<h2>Nhập vào số a tính tông từ 1 đến a</h2>
+<p>Mời bạn nhập vào 1 số nguyên dương:</p>
+<input type="text" id ='inpt'>
+<input type="button" id="cl" value="Click Me!" onclick="caculor()">
+<p id="demo"></p>
+<script>
+    // nhập vào số a từ bàn phím dung prompt hoặc input
+    // thuật toán tính tổng ta dùng vong lặp for
+    function caculor() {
+        let a =parseInt(document.getElementById('inpt').value);
+        let total=0;
+        for (let i = 1; i <= a ; i++) {
+            total +=i;
+        }
+        document.getElementById('demo').innerHTML = 'Kết quả của bạn là:'+total;
+    }
+
+</script>
+
+</body>
+</html>
